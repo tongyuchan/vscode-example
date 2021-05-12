@@ -1,0 +1,20 @@
+.vscode/**
+.vscode-test/**
+out/test/**
+src/**
+.github/**
+.gitignore
+vsc-extension-quickstart.md
+**/tsconfig.json
+**/.eslintrc.json
+**/*.map
+**/*.ts
+contributing.md
+.azure-pipelines.yml
+shared.webpack.config.js
+client/**
+!client/out/extension.js
+!client/src/images/icon_128x.png
+# server/**
+# !server/out/server.js
+

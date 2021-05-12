@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/helpers": "^7.14.0",
+    "@babel/types": "^7.14.1",
+    "@babel/parser": "^7.12.5",
+    "@babel/traverse": "^7.12.5",
+    "@vue/compiler-dom": "^3.0.2",
+    "axios": "^0.21.1",
+    "htmlparser2": "^5.0.1",
+    "posthtml": "^0.13.4",
+    "vscode-languageserver": "^6.1.1",
+    "vscode-languageserver-textdocument": "^1.0.1"
+  },
+  "devDependencies": {
+  }
+}
