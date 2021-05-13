@@ -17,7 +17,7 @@ export default function(context: vscode.ExtensionContext) {
 	// 为服务器提供debug选项
 	// --inspect=6011: 运行在Node's Inspector mode，这样VS Code就能调试服务器了
 	// todo: 目前报错，需要调研
-	let debugOptions = { execArgv: ['--nolazy', '--inspect=6011'] };
+	let debugOptions = { execArgv: ['--nolazy', '--inspect=6012'] };
 
 	// 如果插件运行在调试模式那么就会使用debug server options
 	// 不然就使用run options

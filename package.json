@@ -12,7 +12,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"*"
+		"onStartupFinished"
 	],
 	"main": "./client/out/extension",
 	"repository": {
@@ -20,6 +20,16 @@
 		"url": "https://github.com/tongyuchan/vscode-example.git"
 	},
 	"contributes": {
+		"commands": [
+			{
+				"command": "vscode-example-tyc.fixParameters",
+				"title": "fixParameters"
+			},
+			{
+				"command": "vscode-example-tyc.fixDeclare",
+				"title": "fixDeclare"
+			}
+		],
 		"configuration": {
 			"type": "object",
 			"title": "vscode-example-tyc",
