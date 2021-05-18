@@ -41,7 +41,13 @@
 					"description": "是否开启warning提示"
 				}
 			}
-		}
+		},
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets.json"
+			}
+		]
 	},
 	"scripts": {
 		"postinstall": "cd client && npm install && cd ../server && npm install && cd ..",

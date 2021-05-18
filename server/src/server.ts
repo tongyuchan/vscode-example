@@ -17,6 +17,9 @@ import {
 // 参数校验
 import lint from './lint';
 
+// 自动补全
+import autoCompletion from './autoCompletion';
+
 // 创建一个服务器连接。使用Node的IPC作为传输方式。
 // 也包含所有的预览、建议等LSP特性
 let connection = createConnection(ProposedFeatures.all);
@@ -141,6 +144,9 @@ async function validateTextDocument(textDocument: TextDocument): Promise<void> {
 	// 发送诊断结果
 	connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
 }
+
+// 自动补全
+autoCompletion(connection, documents);
 
 // 监听文档变化
 connection.onDidChangeWatchedFiles(_change => {

@@ -1,0 +1,20 @@
+{
+	"tyc_test": {
+		"prefix": [
+			"tycA",
+			"testA"
+		],
+		"body": [
+            "function test(${1:val}: number, ${2:val2}: string) {",
+            "    return tyc_test.a(val, val2);",
+            "}"
+		],
+		"description":[
+			"快速写一个test函数",
+			"",
+			"调用tyc_test.a方法",
+			"@param val — 参数1",
+			"@param val2 — 参数2."
+		]
+	}
+}
