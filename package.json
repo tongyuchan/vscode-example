@@ -28,6 +28,10 @@
 			{
 				"command": "vscode-example-tyc.fixDeclare",
 				"title": "fixDeclare"
+			},
+			{
+				"command": "vscode-example-tyc.preview",
+				"title": "查看更多信息"
 			}
 		],
 		"configuration": {
@@ -47,7 +51,24 @@
 				"language": "javascript",
 				"path": "./snippets.json"
 			}
-		]
+		],
+		"keybindings": [
+			{
+				"command": "vscode-example-tyc.preview",
+				"key": "ctrl+l",
+				"mac": "cmd+l",
+				"when": "editorHasSelection"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorHasSelection",
+					"command": "vscode-example-tyc.preview",
+					"group": "navigation"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"postinstall": "cd client && npm install && cd ../server && npm install && cd ..",

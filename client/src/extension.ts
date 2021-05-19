@@ -4,6 +4,7 @@ import lintClient from './provider/lintClient';
 import autofix from './provider/autofix/index';
 import autoCompletion from './provider/autoCompletion';
 import hoverInfo from './provider/hoverInfo';
+import createWebview from './provider/createWebview';
 
 let client: LanguageClient;
 
@@ -19,6 +20,9 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// 悬浮提示
 	hoverInfo(context);
+
+	// 创建webview
+	createWebview(context);
 }
 
 export function deactivate(): Thenable<void> | undefined {
